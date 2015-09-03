@@ -4,4 +4,4 @@
 # authors: Paul Newell
 # url: https://github.com/pnewell/discourse-html-whitelist/
 
-register_asset "javascripts/progress.js.es6", :server_side
+register_asset "javascript/progress.js.es6", :server_side
