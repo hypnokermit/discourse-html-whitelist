@@ -4,4 +4,4 @@
 # authors: Paul Newell, Caswal Parker
 # url: https://github.com/caswal/discourse-html-whitelist
 
-register_asset "javascript/progress.js.es6", :server_side
+#register_asset "javascript/div.js.es6", :server_side
