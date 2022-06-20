@@ -3,14 +3,9 @@ export function setup(helper) {
       opts.features['dropcaps'] = true; //!!siteSettings.dropcaps_enabled;
     });
   
-    helper.allowList(["div[class]"]);
     helper.allowList(["div[style]"]);
-    helper.allowList(["span[class]"]);
-    helper.allowList(["span[style]"]);
-    helper.allowList(["font[color]"]);
-
-
-    console.log(
-        "Automation Custom Tags Plugin"
-      );    
+    helper.allowList(["table[style]"]);
+    helper.allowList(["hr[style]"]);
+    helper.allowList(["span[style]"]);	
+    helper.allowList(["font[color]"]); 
   }
