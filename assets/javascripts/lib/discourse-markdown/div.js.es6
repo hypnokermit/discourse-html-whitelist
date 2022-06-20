@@ -16,4 +16,5 @@ export function setup(helper) {
     helper.allowList(["span[style]"]);	
     helper.allowList(["span[class]"]);	
     helper.allowList(["font[color]"]); 
+    helper.allowList(["a[style]"]);	
   }
