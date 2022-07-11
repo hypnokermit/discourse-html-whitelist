@@ -1,4 +1,0 @@
-en:
-    site_settings:
-        htmlwhitelist_enabled: "html-whitelist enabled"
-        htmlwhitelist_allow_classes: "Allow classes on ALL html tags"
