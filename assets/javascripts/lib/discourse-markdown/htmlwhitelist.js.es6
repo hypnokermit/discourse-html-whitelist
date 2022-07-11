@@ -16,9 +16,11 @@ export function setup(helper) {
     helper.allowList(["td[style]"]);
     helper.allowList(["td[colspan]"]);
 
-    helper.allowList({
-        custom(tag, name, value) {
-            if (name === "class") { return !!tag.match(/[\S]*/); }
-        },
-    });
+    if ({{!!siteSettings.htmlwhitelist_allowclasses}}) {
+        helper.allowList({
+            custom(tag, name, value) {
+                if (name === "class") { return !!tag.match(/[\S]*/); }
+            },
+        });
+    }
 }
