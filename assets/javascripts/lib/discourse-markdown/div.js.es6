@@ -29,6 +29,6 @@ export function setup(helper) {
             if (name === "class") {
                 return !!tag.match(/[\S]*/);
             }
-        }
+        },
     });
   }
