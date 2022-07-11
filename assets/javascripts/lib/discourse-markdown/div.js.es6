@@ -1,6 +1,6 @@
 export function setup(helper) {
     helper.registerOptions((opts, siteSettings)=>{
-      opts.features['dropcaps'] = true; //!!siteSettings.dropcaps_enabled;
+      opts.features['html-whitelist'] = true; //!!siteSettings.html-whitelist_enabled;
     });
   
     helper.allowList(["div[style]"]);
@@ -23,5 +23,12 @@ export function setup(helper) {
     helper.allowList(["img[class]"]);
     helper.allowList(["a[style]"]);
     helper.allowList(["dl[class]"]);
-    helper.allowList(["\*[class]"]);
+    
+    helper.allowList({
+        custom(tag, name, value) {
+            if (name === "class") {
+                return !!tag.match(/[\S]*/);
+            }
+        }
+    });
   }
