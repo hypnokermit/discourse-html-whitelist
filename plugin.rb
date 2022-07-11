@@ -4,5 +4,5 @@
 # authors: Paul Newell, Caswal Parker, hypnokermit
 # url: https://github.com/hypnokermit/discourse-html-whitelist
 
-#register_asset "javascript/div.js.es6", :server_side
+#register_asset "javascript/htmlwhitelist.js.es6", :server_side
 enabled_site_setting :htmlwhitelist_enabled
