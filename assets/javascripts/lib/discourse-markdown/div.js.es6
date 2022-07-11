@@ -22,5 +22,5 @@ export function setup(helper) {
     helper.allowList(["img[style]"]);
     helper.allowList(["img[class]"]);
     helper.allowList(["a[style]"]);
-    helper.allowList(["[class]"]);
+    helper.allowList(["*[class]"]);
   }
