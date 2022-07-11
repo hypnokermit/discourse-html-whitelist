@@ -1,6 +1,6 @@
 export function setup(helper) {
     helper.registerOptions((opts, siteSettings)=>{
-      opts.features['html-whitelist'] = true; //!!siteSettings.html-whitelist_enabled;
+      opts.features['html-whitelist'] = !!siteSettings.htmlwhitelist_enabled;
     });
   
     helper.allowList(["div[style]"]);
