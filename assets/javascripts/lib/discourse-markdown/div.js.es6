@@ -5,6 +5,9 @@ export function setup(helper) {
   
     helper.allowList(["div[style]"]);
     helper.allowList(["span[style]"]);
+    helper.allowList(["img[style]"]);
+    helper.allowList(["a[style]"]);
+    helper.allowList(["hr[style]"]);
     
     helper.allowList(["table[style]"]);
     helper.allowList(["tr[style]"]);
@@ -12,10 +15,6 @@ export function setup(helper) {
     helper.allowList(["th[colspan]"]);
     helper.allowList(["td[style]"]);
     helper.allowList(["td[colspan]"]);
-    
-    helper.allowList(["hr[style]"]);
-    helper.allowList(["img[style]"]);
-    helper.allowList(["a[style]"]);
     
     helper.allowList({
         custom(tag, name, value) {
