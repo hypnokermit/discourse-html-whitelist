@@ -15,12 +15,6 @@ export function setup(helper) {
     helper.allowList(["th[colspan]"]);
     helper.allowList(["td[style]"]);
     helper.allowList(["td[colspan]"]);
-}
-
-export function setup(helper) {
-    helper.registerOptions((opts, siteSettings)=>{
-      opts.features['htmlwhitelist'] = !!siteSettings.htmlwhitelist_enabled;
-    });
 
     if (!!this.siteSettings.htmlwhitelist_allowclasses) {
         helper.allowList({
