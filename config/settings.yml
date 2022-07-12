@@ -2,6 +2,3 @@ plugins:
     htmlwhitelist_enabled:
         default: true
         client: true
-    htmlwhitelist_allowclasses:
-        default: true
-        client: true
