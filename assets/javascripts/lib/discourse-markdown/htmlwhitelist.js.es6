@@ -16,7 +16,7 @@ export function setup(helper) {
     helper.allowList(["td[style]"]);
     helper.allowList(["td[colspan]"]);
 
-    if (true === !!this.siteSettings.htmlwhitelist_allowclasses) {
+    if (this.siteSettings.htmlwhitelist_allowclasses === true) {
         helper.allowList({
             custom(tag, name, value) {
                 if (name === "class") { return !!tag.match(/[\S]*/); }
